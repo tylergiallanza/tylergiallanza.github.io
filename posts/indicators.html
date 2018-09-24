@@ -1,0 +1,89 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Unusual Economic Indicators</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="../blog.css" rel="stylesheet">
+    <script type='text/javascript' async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  </head>
+
+  <body>
+  
+  <main role="main" class="container">
+    <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+        <a class="text-muted" href="../index.html">Home</a>
+        </div>
+        <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="../blog.html">Blog</a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+        </div>
+    </div>
+    </header>
+    <div class="row">
+      <div class="col-md-8 offset-md-2 blog-main">
+      <div class='blog-post'>
+        <h2 class="blog-post-title">Unusual Economic Indicators</h2>
+        <p class="blog-post-meta">Tyler Giallanza<br>September 23, 2018</p>
+        <p>I recently came across another one of those articles (like <a href='https://www.businessinsider.com/unusual-economic-indicators-2014-10'>this one</a>) that presents a list of surprising or unusual economic indicators. By “economic indicator” these articles mean some factor that has predictive power for the health of the economy: by looking at the value of one of these indicators one can, supposedly, intuit the broader economic climate.</p>
+        <p>When people try to find economic indicators they generally look at well-known factors that economics believe give a good picture of the strength of the economy, indicators like Gross Domestic Product, the rate of inflation/deflation, and the growth/contraction of the stock market. The articles focusing on usual economic indicators look at esoteric factors like the so-called “Buttered Popcorn Index;” the theory goes that people flock to the movies to distract themselves from reality when the economy is poor.</p>
+        <h3>The Narrative Fallacy</h3>
+        <p>The first time I saw one of these articles I assumed it was satirical, but I was wrong – it turns out people actually believe that these factors are predictive of the economy! After spending a few minutes bemoaning that I live in a world where a person can believe that “The hotter the waitress, the closer the economy is to the brink” and still get hired to write articles for Business Insider, I started thinking about the broader implications of these beliefs.</p>
+        <p>Creating “unusual economic indicators” where they don’t exist is a symptom of the narrative fallacy, or the tendancy for people to see patterns in random data and ascribe casualty where none exists. Combined with the hindsight bias, or the inclination to believe that an event was predictable after the event occurred, the narrative fallacy results in foolhardy decision making based on models overfit to past data. </p>
+        <img src="hindsight.jpg" class="img_fluid mx-auto d-block" style="max-width:80%;" alt="The hindsight bias">
+        <p>The problem with the narrative fallacy is that, for whatever reason, we really like to believe in stories and ascribe cause to random data. This trend extends beyond unusual economic indicators and is especially bad in finance – very often you’ll read a news article that attributes the stock market dropping \(0.1\%\) to recent earnings disappointments. The problem is, the stock market generally fluctuates \(\pm1\%\) per day; a \(0.1\%\) drop is well within the bounds of chance and is certainly not attributable to any one particular event.</p>
+        <p>Many people (generally those without a background in mathematics or statistics) believe that the solution to the problem of separating the signal from the noise is some buzzword term like “statistical analysis” or “backtesting” or “Monte Carlo simulation.” The problem is, statistics are often easy to manipulate and hard to interpret. </p>
+        <img src="statistics.png" class="img_fluid mx-auto d-block" style="max-width:80%;" alt="Lying with Statistics">
+        <p>To demonstrate, I found some unusual economic indicators of my own. Keep in mind that my entire purpose in this exercise is to find indicators that should in little to no way relate to the health of the US economy. By using a statistical technique called correlation, I found 3 indicators that almost perfectly track the price of the S&amp;P500 since 2009.</p>
+        <p>Note: correlation is far from perfect, but this doesn’t stop financial analysis from using this exact technique to show that their investments are/are not exposed to risk from changes in the stock market.</p>
+        <h3>The Iceland Property Indicator</h3>
+        <p>Starting off simple, let’s look at how the value of property in Reykjavik, Iceland relates to the S&amp;P500’s prices since 2009.</p>
+        <img src="iceland.png" class="img_fluid mx-auto d-block" style="max-width:80%;" alt="Iceland property values">
+        <p><b>The indicator</b>: As the charts above clearly show, there is a discernible relationship between Reykjavik housing prices and US stock market performance; both experience a small dip between 2009 and 2010, a slow rebound until 2016, and a sharp increase in value until 2018. Statistical analysis shows a \(94\%\) correlation between Icelandic property value and stock prices.</p>
+        <p><b>The explanation</b>: buying property in Iceland is a bit of an arduous process for foreigners, because they need permission from the government before buying any property, proving among other things that they have the financial means to afford the move. This added hassle means that anyone planning a move to Iceland would wait until the economy stabilizes before purchasing Icelandic property. Considering the majority of visitors to Iceland hail from the USA, and that the majority of foreign property buyers are in the market for a second home, it makes sense that the excess wealth created by a healthy US economy would prop up Icelandic housing prices.</p>
+        <h3>The Japanese Population Indicator</h3>
+        <img src="japanese.png" class="img_fluid mx-auto d-block" style="max-width:80%;" alt="Japanese population">
+        <p><b>The indicator</b>: With a correlation of \(97.6\%\), the population of Japan is an almost perfectly negative indicator of US stock prices – that is to say, when the population of Japan goes down, us stock prices go up with a \(97.6\%\) confidence.</p>
+        <p><b>The explanation</b>: Japan’s declining population has resulted in an overall slowing of the Japanese economy. With Japan’s economy growing less, the United States has been able to become increasingly competitive globally, no longer fighting for resources against Japan. This has been the case especially in Asia; Japan’s decreasing economic clout has created space for the US to expand into developing economies in Asia, increasing the strength of the US economy and thereby helping the stock market.</p>
+        <h3>The Iraq Internet Indicator</h3>
+        <p><b>The indicator</b>: Our strongest indicator, with a whopping \(99.4\%\) correlation to S&amp;P500 prices, is the number of Internet users in Iraq since 2009.</p>
+        <p><b>The explanation</b>:The export of Internet technology from the United States to developing economies has been a huge driver of growth in the 21st century. Especially since the widespread adoption of mobile devices with the creation of the iPhone in 2007, US tech companies have dramatically increased their stock prices as they’ve gathered more customers globally. Iraq in particular was effected with the rise of mobile users during and after the Arab Spring.</p>
+        <h3>In Summary</h3>
+        <p>The above three indicators track US stock prices almost perfectly since 2009. This does not mean that you should liquidate your stock portfolio if Japan’s population starts to rise: it means that you should be careful when reading about causal or predictive relationships in the global economy. Often there is no deeper meaning – many of these factors correlate due to chance alone.</p>
+        <h3>Notes</h3>
+        <ul>
+          <li>For further reading into the narrative fallacy and related issues, I cannot recommend Nassim Taleb's <a href='https://www.amazon.com/dp/B00139XTG4/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1'>The Black Swan</a> highly enough. Taleb coined the term "narrative fallacy" in this book.</li>
+          <li>For further reading about the hindsight bias, Daniel Kahneman's <a href='https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman-ebook/dp/B00555X8OA/ref=sr_1_3?s=digital-text&ie=UTF8&qid=1537748171&sr=1-3&keywords=thinking+fast+and+slow&dpID=41shZGS-G%252BL&preST=_SY445_QL70_&dpSrc=srch'>Thinking, Fast and Slow</a> is another fantastic resource.</li>
+          <li>If you liked the "lying about statistics" cartoon, check out the website I stole it from: the well-done but poorly drawn <a href='https://mathwithbaddrawings.com/'>Math with Bad Drawings</a>.</li>
+          <li>I found the data for the S&amp;P prices, Japanese population, Iraq internet users, and Iceland property values from the <a href='https://fred.stlouisfed.org/'>FRED website</a>. It has a large collection of economic data. I used Python and its NumPy package to analyze the data.</li>
+        </ul>
+        
+      </div>
+      </div>
+    </div>
+  </main>
+  
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+  </body>
+</html>
