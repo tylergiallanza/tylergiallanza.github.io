@@ -1,68 +1,165 @@
-
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='bootstrap/bootstrap.min.css'></link>
+    <link rel='stylesheet' href='main.css'></link>
     <title>Tyler Giallanza</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88602606-5"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-88602606-5');
+      handle_scroll = function() {
+        if(window.pageYOffset > 50) {
+          document.getElementById('button-up').style.display = 'flex';
+        } else {
+          document.getElementById('button-up').style.display = 'none';
+        }
+      }
     </script>
-
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
   </head>
-
-  <body class="text-center">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">TYLER GIALLANZA</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="projects.html">Projects</a>
-            <a class="nav-link" href="Resume.pdf">Resume</a>
-            <a class="nav-link" href="blog.html">Blog</a>
-          </nav>
+  <body onscroll='handle_scroll()'>
+    <div class='fullscreen title-container'>
+      <div class='header'>
+        <div class='header-content'>
+          <div class='header-item'><a href='#'>HOME</a></div>
+          <div class='header-item'><a href='#pub'>RESEARCH</a></div>
+          <div class='header-item'><a href='media/CV.pdf' target='_blank'>CV</a></div>
+          <div class='header-item'><a href='mailto:tylergiallanza@gmail.com'>CONTACT</a></div>
         </div>
-      </header>
-
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">ABOUT ME</h1>
-        <p class="lead">I'm a computer science student and President's Scholar at Southern Methodist University. I've been working on a variety of projects over the past few years independently and with the Darwin Deason Institute for Cybersecurity. My research focus is machine learning and its applications for network and IoT security.</p>
-        <p class="lead">
-          <a href="projects.html" class="btn btn-lg btn-secondary">View Projects</a>
-        </p>
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Contact me by <a href="mailto:tgiallanza@smu.edu">email</a></p>
-        </div>
-      </footer>
+        <div class='header-content-left'>TYLER GIALLANZA</div>
+      </div>
+      <div class='body title-content'>
+        <h1>About Me</h1>
+        <p>I'm a final-year undergraduate studying Computer Science at SMU. Currently, I'm abroad at the University of Oxford until June 2020. I'm looking to join a cognitive neuroscience lab for a PhD starting in Fall 2020.</p>
+        <div class="button">
+          <div class="circle"></div>
+            <a href="#research">Learn More</a>
+          </div>
+      </div>
     </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <div class='third' id='research'>
+    <h1>Research Interests</h1>
+    <p>I'm interested in using applied machine learning to develop mechanistic explanations for cognitive processes in humans. I'm currently working with Drs. Jonathan Cohen and Marius C&abreve;t&abreve;lin Iordan at the Princeton Neuroscience Institute on understanding how humans represent semantic knowledge. We use a combination of computational modeling, behavioral experiments, and fMRI studies.</p>
+    </div>
+    <div class='pub' id='pub'>
+      <h1>Publications</h1>
+      <h2>2019</h2>
+      <div class='pub-box'>
+        <div class='article-left'>
+            <div class="button article-button">
+              <div class="circle"></div>
+                <a href="media/context_matters.pdf" target='_blank'>PDF</a>
+            </div>
+            <div class="button article-button">
+              <div class="circle"></div>
+                <a href="media/context_matters.pptx" target='_blank'>Slides</a>
+            </div>
+            <div class="button article-button">
+              <div class="circle"></div>
+                <a href="media/context_matters_poster.pdf" target='_blank'>Poster</a>
+            </div>
+        </div>
+        <div class='article-details'>
+          <div class='article-title'>Context Matters: Recovering Human Semantic Structure from Machine Learning Analysis of Large-Scale Text Corpora</div>
+          <div class='author-list'>M.C. Iordan, T. Giallanza, C.T. Ellis, N. Beckage, &amp; J.D. Cohen.</div>
+          <div class='journal-info'>Preprint available on ArXiv.</div>
+        </div>
+        <div class='article-right'> </div>
+      </div>
+      <div class='pub-box'>
+        <div class='article-left'>
+            <div class="button article-button">
+              <div class="circle"></div>
+                <a href="media/keyboard_snooping.pdf" target='_blank'>PDF</a>
+            </div>
+            <div class="button article-button">
+              <div class="circle"></div>
+                <a href="media/keyboard_snooping.pptx" target='_blank'>Slides</a>
+            </div>
+        </div>
+        <div class='article-details'>
+          <div class='article-title'>Keyboard Snooping from Mobile Phone Arrays with Mixed Convolutional and Recurrent Neural Networks</div>
+          <div class='author-list'>T. Giallanza, E Gabrielsen, M. Taylor, E. Larson, &amp; M.A. Thornton.</div>
+          <div class='journal-info'>Proceedings of the ACM on Interactive, Mobile, Wearable, and Ubiquitous Technologies. Vol. 3, Is. 2, June 2019 Article No. 45.</div>
+        </div>
+        <div class='article-right'> </div>
+      </div>
+      <div class='pub-box'>
+        <div class='article-left'>
+            <div class="button article-button">
+              <div class="circle"></div>
+                <a href="media/tvc.pdf" target='_blank'>PDF</a>
+            </div>
+            <div class="button article-button">
+              <div class="circle"></div>
+                <a href="media/tvc.pptx" target='_blank'>Slides</a>
+            </div>
+        </div>
+        <div class='article-details'>
+          <div class='article-title'>Task Value Calculus: Multi-objective Trade off Analysis using Multiple-Valued Decision Diagrams</div>
+          <div class='author-list'>T. Giallanza, E. Gabrielsen, M. Taylor, E.C. Larson, &amp; M.A. Thornton.</div>
+          <div class='journal-info'>2019 IEEE 49th International Symposium on Multiple-Valued Logic, Pages 126-131.</div>
+        </div>
+        <div class='article-right'> </div>
+      </div>
+      <div class='pub-box'>
+        <div class='article-left'>
+            <div class="button article-button">
+              <div class="circle"></div>
+                <a href="https://github.com/mhahsler/arulesViz" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class='article-details'>
+          <div class='article-title'>ArulesViz: Visualizing Association Rules and Frequent Itemsets</div>
+          <div class='author-list'>M. Hahsler, T. Giallanza, &amp; S. Chelluboina.</div>
+          <div class='journal-info'>Comprehensive R Archive Network.</div>
+        </div>
+        <div class='article-right'> </div>
+      </div>
+      <h2>2018</h2>
+      <div class='pub-box'>
+        <div class='article-left'>
+            <div class="button article-button">
+              <div class="circle"></div>
+                <a href="https://github.com/ianjjohnson/arulesCBA" target='_blank'>GitHub</a>
+            </div>
+        </div>
+        <div class='article-details'>
+          <div class='article-title'>ArulesCBA: Classification Based on Association Rules in R</div>
+          <div class='author-list'>I. Johnson, T. Giallanza, &amp; M. Hahsler.</div>
+          <div class='journal-info'>Comprehensive R Archive Network.</div>
+        </div>
+        <div class='article-right'> </div>
+      </div>
+      <div class='pub-box'>
+        <div class='article-left'>
+            <div class="button article-button">
+              <div class="circle"></div>
+                <a href="https://github.com/tylergiallanza/arulesCWAR" target='_blank'>GitHub</a>
+            </div>
+        </div>
+        <div class='article-details'>
+          <div class='article-title'>ArulesCWAR: Classification based on Weighted Association Rules</div>
+          <div class='author-list'>T. Giallanza &amp; M. Hahsler.</div>
+          <div class='journal-info'>Comprehensive R Archive Network.</div>
+        </div>
+        <div class='article-right'> </div>
+      </div>
+      <h2>In Preparation</h2>
+      <div class='pub-box'>
+        <div class='article-left'>
+        </div>
+        <div class='article-details'>
+          <div class='article-title'>EAT: Estimated-Arrival-Time Authentication for Encryption-Free Authentication in Resource Constrained IoT Devices</div>
+          <div class='author-list'>T. Giallanza, I. Johnson, D. Engels, &amp; D. Dworak.</div>
+          <div class='journal-info'></div>
+        </div>
+        <div class='article-right'> </div>
+      </div>
+    </div>
+    <div class="button" id='button-up'>
+        <div class="circle"></div>
+        <a href="#">&uarr;</a>
+        </div>
+      </div>
   </body>
 </html>
