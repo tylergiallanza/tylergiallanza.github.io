@@ -1,6 +1,7 @@
 #hero {
-  /*background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../img/brains.jpg") top right no-repeat;*/
-  background: url("../img/brains.png") top right no-repeat;
+  /*background: url("../img/brains.png") top right no-repeat;*/
+  background-color: #fcfcff;
+  color: #313131;
   background-size: cover;
   min-height: 100vh;
 }
