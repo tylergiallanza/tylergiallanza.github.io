@@ -1,0 +1,7 @@
+<body>
+  <div id="guest" style="font-size:32px; font-family:serif;"></div>
+  <script>
+    const guest = new URLSearchParams(window.location.search).get("guest");
+    if (guest) document.getElementById("guest").textContent = guest;
+  </script>
+</body>
